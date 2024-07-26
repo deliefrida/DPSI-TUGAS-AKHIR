@@ -1,0 +1,251 @@
+### Staff Lihat Semua Pengaduan
+# Replace ACCESS_TOKEN with the token received from staff login
+GET https://deliefrida-production.up.railway.app/pengaduan/all
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN0YWZmIiwiaWF0IjoxNzIxMjk3NDMzfQ.p6cI9Syxiron9DD3VfgwjX9oBUEkQZKKCNPO_ihqY-I
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Staff Perbarui Status Pengaduan
+# Replace ACCESS_TOKEN with the token received from staff login
+# Replace PENGADUAN_ID with the id of the pengaduan to update
+PUT https://deliefrida-production.up.railway.app/pengaduan/1/status
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN0YWZmIiwiaWF0IjoxNzIxMjk3NDMzfQ.p6cI9Syxiron9DD3VfgwjX9oBUEkQZKKCNPO_ihqY-I
+
+{
+  "status": "Ditindaklanjuti",
+  "tanggapan": "langsung DOOOO!!!"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Staff Login
+
+POST https://deliefrida-production.up.railway.app/auth/staff/login
+Content-Type: application/json
+
+{
+  "email": "staff@dummy.com",
+  "password": "password123"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Mahasiswa Kirim Pengaduan
+# Replace ACCESS_TOKEN with the token received from mahasiswa login
+POST https://deliefrida-production.up.railway.app/pengaduan
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6Im1haGFzaXN3YSIsImlhdCI6MTcyMTI5NzI3NX0.kb4UGHBa7IyMrdK89KqVn4Sc_DNWySDuGoKxBE14ois
+
+{
+  "judul": "Pengaduan Kecurangan Joki di UAD",
+  "deskripsi": "lorem ipsum bla bla bla",
+  "kategori": "kecurangan"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Mahasiswa Login
+POST https://deliefrida-production.up.railway.app/auth/login
+Content-Type: application/json
+
+{
+  "email": "mahasiswa@test.com",
+  "password": "password123"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Mahasiswa Register
+POST https://deliefrida-production.up.railway.app/auth/register
+Content-Type: application/json
+
+{
+  "nama": "deliafrida",
+  "email": "mahasiswa@test.com",
+  "password": "password123"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Mahasiswa Kirim Pengaduan
+# Replace ACCESS_TOKEN with the token received from mahasiswa login
+POST https://deliefrida-production.up.railway.app/pengaduan
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6Im1haGFzaXN3YSIsImlhdCI6MTcyMTcwNTk0NX0.8Qy5bc0Fqzqq4iReFO-aZvfY7s5PuEvCJXm3BQ24Pzg
+
+{
+  "judul": "Pengaduan bla b la bla bla",
+  "deskripsi": "lorem ipsum bla bla bla",
+  "kategori": "kecurangan"
+}
+
+
+
